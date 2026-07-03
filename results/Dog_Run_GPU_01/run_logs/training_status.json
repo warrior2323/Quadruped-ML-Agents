@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.11.0+cu128"
+    },
+    "DogBrain": {
+        "checkpoints": [
+            {
+                "steps": 3499909,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3499909.onnx",
+                "reward": 38.191360082169965,
+                "creation_time": 1783089603.4879572,
+                "auxillary_file_paths": [
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3499909.pt"
+                ]
+            },
+            {
+                "steps": 3999977,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3999977.onnx",
+                "reward": 39.82517680429643,
+                "creation_time": 1783089929.3584142,
+                "auxillary_file_paths": [
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3999977.pt"
+                ]
+            },
+            {
+                "steps": 4499971,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4499971.onnx",
+                "reward": 47.53912494667863,
+                "creation_time": 1783090170.6657605,
+                "auxillary_file_paths": [
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4499971.pt"
+                ]
+            },
+            {
+                "steps": 4999976,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4999976.onnx",
+                "reward": 44.56957545647254,
+                "creation_time": 1783090413.7234476,
+                "auxillary_file_paths": [
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4999976.pt"
+                ]
+            },
+            {
+                "steps": 5346523,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-5346523.onnx",
+                "reward": 43.25416426225142,
+                "creation_time": 1783090586.922085,
+                "auxillary_file_paths": [
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-5346523.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5346523,
+            "file_path": "results\\Dog_Run_GPU_01\\DogBrain.onnx",
+            "reward": 43.25416426225142,
+            "creation_time": 1783090586.922085,
+            "auxillary_file_paths": [
+                "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-5346523.pt"
+            ]
+        }
+    }
+}
