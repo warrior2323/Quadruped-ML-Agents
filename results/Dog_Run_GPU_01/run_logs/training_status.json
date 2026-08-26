@@ -7,58 +7,58 @@
     "DogBrain": {
         "checkpoints": [
             {
-                "steps": 3499909,
-                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3499909.onnx",
-                "reward": 38.191360082169965,
-                "creation_time": 1783089603.4879572,
+                "steps": 22499980,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-22499980.onnx",
+                "reward": 50.44857604554755,
+                "creation_time": 1783101858.9805007,
                 "auxillary_file_paths": [
-                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3499909.pt"
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-22499980.pt"
                 ]
             },
             {
-                "steps": 3999977,
-                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3999977.onnx",
-                "reward": 39.82517680429643,
-                "creation_time": 1783089929.3584142,
+                "steps": 22999977,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-22999977.onnx",
+                "reward": 49.419439683641706,
+                "creation_time": 1783102139.4865227,
                 "auxillary_file_paths": [
-                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-3999977.pt"
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-22999977.pt"
                 ]
             },
             {
-                "steps": 4499971,
-                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4499971.onnx",
-                "reward": 47.53912494667863,
-                "creation_time": 1783090170.6657605,
+                "steps": 23499972,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-23499972.onnx",
+                "reward": 50.2678609388076,
+                "creation_time": 1783102417.219981,
                 "auxillary_file_paths": [
-                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4499971.pt"
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-23499972.pt"
                 ]
             },
             {
-                "steps": 4999976,
-                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4999976.onnx",
-                "reward": 44.56957545647254,
-                "creation_time": 1783090413.7234476,
+                "steps": 23999991,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-23999991.onnx",
+                "reward": 48.25712970911972,
+                "creation_time": 1783102692.262805,
                 "auxillary_file_paths": [
-                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-4999976.pt"
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-23999991.pt"
                 ]
             },
             {
-                "steps": 5346523,
-                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-5346523.onnx",
-                "reward": 43.25416426225142,
-                "creation_time": 1783090586.922085,
+                "steps": 24200310,
+                "file_path": "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-24200310.onnx",
+                "reward": 48.10514975076745,
+                "creation_time": 1783102804.8233926,
                 "auxillary_file_paths": [
-                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-5346523.pt"
+                    "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-24200310.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 5346523,
+            "steps": 24200310,
             "file_path": "results\\Dog_Run_GPU_01\\DogBrain.onnx",
-            "reward": 43.25416426225142,
-            "creation_time": 1783090586.922085,
+            "reward": 48.10514975076745,
+            "creation_time": 1783102804.8233926,
             "auxillary_file_paths": [
-                "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-5346523.pt"
+                "results\\Dog_Run_GPU_01\\DogBrain\\DogBrain-24200310.pt"
             ]
         }
     }

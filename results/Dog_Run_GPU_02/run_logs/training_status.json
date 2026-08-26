@@ -1,0 +1,29 @@
+{
+    "DogBrain": {
+        "checkpoints": [
+            {
+                "steps": 158034,
+                "file_path": "results\\Dog_Run_GPU_02\\DogBrain\\DogBrain-158034.onnx",
+                "reward": -92.50498019590556,
+                "creation_time": 1784183787.7573688,
+                "auxillary_file_paths": [
+                    "results\\Dog_Run_GPU_02\\DogBrain\\DogBrain-158034.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 158034,
+            "file_path": "results\\Dog_Run_GPU_02\\DogBrain.onnx",
+            "reward": -92.50498019590556,
+            "creation_time": 1784183787.7573688,
+            "auxillary_file_paths": [
+                "results\\Dog_Run_GPU_02\\DogBrain\\DogBrain-158034.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.11.0+cu128"
+    }
+}

@@ -60,7 +60,6 @@ public class QuadrupedAgent : Agent
         sensor.AddObservation(mainBody.angularVelocity);     // 3 values (Is it spinning/falling?)
         sensor.AddObservation(mainBody.transform.up);        // 3 values (Which way is "Up" for the dog?)
         
-        // Loop through all legs and tell the net their current angles
         foreach (var leg in legs)
         {
             sensor.AddObservation(leg.jointPosition[0]); // 8 values total (1 for each leg)
@@ -79,9 +78,7 @@ public class QuadrupedAgent : Agent
             legs[i].xDrive = drive;
         }
 
-        // ==========================================
         // 2. DENSE REWARD SHAPING
-        // ==========================================
         
         Vector3 directionToTarget = (targetBox.position - mainBody.transform.position).normalized;
         float forwardSpeed = Vector3.Dot(mainBody.linearVelocity, directionToTarget);
@@ -95,7 +92,6 @@ public class QuadrupedAgent : Agent
         }
         AddReward(-energyUsed * 0.005f);
 
-        // NEW: The Anti-Air Penalty
         // If the dog jumps higher than 1.3 meters, punish it every single frame it is in the air.
         if (mainBody.transform.position.y > 2.25f) 
         {
@@ -103,9 +99,8 @@ public class QuadrupedAgent : Agent
         }
 
 
-        // ==========================================
         // 3. EPISODE TERMINATION (The Final Score)
-        // ==========================================
+
         float distanceToTarget = Vector3.Distance(mainBody.transform.position, targetBox.position);
 
         if (distanceToTarget < 1.5f)
@@ -113,9 +108,8 @@ public class QuadrupedAgent : Agent
             SetReward(1.0f); // Massive bonus for succeeding
             EndEpisode(); 
         }
-        
-        // CRITICAL FIX: Removed the flip check entirely! It was causing the instant-death loop.
-        // Now it ONLY dies if its center hits the floor (y < 0.3f).
+
+        // Now it ONLY dies if its center hits the floor (y < 1.2f).
         else if (mainBody.transform.position.y < 1.2f)
         {
             SetReward(-1.0f); // Massive penalty for face-planting
@@ -123,9 +117,8 @@ public class QuadrupedAgent : Agent
         }
     }
 
-    // ==========================================
     // 4. COLLISION DETECTION
-    // ==========================================
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name.Contains("wall"))
